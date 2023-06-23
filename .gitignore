@@ -7,6 +7,9 @@ yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
 
+# Firebase keys
+**/deeosoft-api-permission.json
+
 # Firebase cache
 .firebase/
 
