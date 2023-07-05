@@ -31,7 +31,7 @@ app.post('/api/registerUser', (req, res) => {
     registerUser(req.body.email + req.body.password, req.body).then(data => {
         res.status(200).send(data)
     }).catch(err => {
-        res.status(500).send(err)
+        res.status(200).send(err)
     });
 });
 
@@ -44,7 +44,7 @@ app.post('/api/login', (req, res) => {
                 data: data.data()
             })
         } else {
-            res.status(500).send({
+            res.status(200).send({
                 success: false,
                 message: "User does not exist",
                 data: {}
